@@ -136,7 +136,7 @@ Start by going to their website and signing in using your GitHub credentials. Fr
 ```yaml
 language: node_js
 node_js:
-  - "6.9"
+  - "10"
 ```
 
 Save this file then commit and push it to your master branch. This is the file that Travis CI looks for to know what to do for each repository, and it is highly customizable to allow for many different types of processes to be automated. The file we have written here simply tells Travis CI that our project is a node project and it requires node version 6.9 or newer, and from there it will perform its default behavior which is to run `npm install` followed by `npm test` and will report if there are any issues (this is one of those cases where following convention makes your life easier).
